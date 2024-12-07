@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const AuthLayout = ({ children, type }) => {
+
+  const Googlelogo = "/images/goggle.jpg"
+  const Facebooklogo = "/images/goggle.jpg"
+
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center">
       <div className="w-full max-w-md bg-white shadow-md rounded-lg p-8">
@@ -32,13 +36,13 @@ const AuthLayout = ({ children, type }) => {
         {type === "signin" && ( // Hanya tampil ketika type === "signin"
           <div className="flex justify-center gap-4">
             <button className="flex items-center justify-center w-10 h-10 border rounded-full">
-              <img src="../../public/google.jpg" alt="Google" className="w-6 h-6" />
+              <img src={Googlelogo} alt="Google" className="w-6 h-6 object-cover" />
             </button>
             <button className="flex items-center justify-center w-10 h-10 border rounded-full">
               <img
-                src="/facebook-icon.png"
+                src={Facebooklogo}
                 alt="Facebook"
-                className="w-6 h-6"
+                className="w-6 h-6 object-cover"
               />
             </button>
           </div>
