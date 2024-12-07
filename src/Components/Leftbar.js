@@ -26,14 +26,14 @@ function LeftBar(){
               </ul>
               <ul>
                 <li>
-                  <a href="#" className="mt-2 group flex items-center px-2 py-2 text-base leading-6 font-medium rounded-full hover:bg-gray-800 hover:text-blue-300">
+                  <Link to="/message" className="mt-2 group flex items-center px-2 py-2 text-base leading-6 font-medium rounded-full hover:bg-gray-800 hover:text-blue-300">
                     <div>
                       <svg className="mr-4 h-8 w-8" fill="none" strokeLinecap="round" strokeLinejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
                         <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                       </svg>
                     </div>
                     <span className="md:block hidden text-xl">Messages</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <ul>

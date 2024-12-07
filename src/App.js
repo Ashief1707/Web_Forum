@@ -7,6 +7,7 @@ import Profile from './Components/Profile';
 import SignIn from './Pages/SignIn';
 import SignUp from './Pages/SignUp';
 import RightBar from './Components/Rightbar';
+import Message from './Components/Message';
 
 const ErrorRoute = () => <div>Page not found</div>;
 
@@ -44,6 +45,19 @@ const App = () => {
             <LeftBar />
             <main role="main" className="md:w-[990px]">
               <Profile />
+            </main>
+          </div>
+        </div>
+      ),
+    },
+    {
+      path: "/message",
+      element: (
+        <div className="bg-black relative h-screen overflow-y-auto">
+          <div className="md:flex justify-center">
+            <LeftBar />
+            <main role="main" className="md:w-[990px]">
+              <Message className="w-full"/>
             </main>
           </div>
         </div>
